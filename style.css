@@ -39,3 +39,20 @@ img {
     width: 60vw;
     height: auto;
 }
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    border:solid;
+    border-color:orange;
+    background-color:blueviolet;
+    border-radius: 10px;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    height: 15vh;
+    width: 80vw;
+}
