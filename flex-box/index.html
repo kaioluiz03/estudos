@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex-box - Propriedades</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="containerPrincipal">
+            <header id="titulo">
+                <h1>Propriedades do Flex-box!</h1>
+            </header>
+
+            <section class="Divisao">
+                <div class="tamanho">
+                    <h1>Propriedades para o elemento pai</h1>
+                </div>
+                <article class="tamanho">
+                    <p>Primeiramente para que você consiga usar as propriedades do Flex-box, você precisa atribuir a propriedade CSS "display" com os valores flex(na maioria dos casos) ou inline-flex no elemento pai.</p>
+                    <h2>Eixo principal - (flex-direction)</h2>
+                    <p>Podemos definir a posição do flex-container com a propriedade "flex-direction" e podemos ultilizar os seguntes valores:</p>
+                    <ul>
+                        <li>row - é o padão, deixa os elementos em comprimento de linha da esquerda para a direita.</li>
+                        <li>row-reverse - trás os itens em linha da direita para a esquerda.</li>
+                        <li>column - é parecido com o row porém trás os itens em coluna de cima para baixo.</li>
+                        <li>column-reverse - trás os itens em coluna de baixo para cima.</li>
+                    </ul>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg" alt="imagem explicando o flex-direction.">
+                </article>
+                <article class="tamanho">
+                    <h2>Quebra de linha - (flex-wrap)</h2>
+                    <p>Podemos definir uma quebra de linha para os itens do Flex-box usando "flex-wrap" e os valores: nowrap, wrap, wrap-reverse.</p>
+                    <ul>
+                        <li>nowrap - é o padrão e faz com que todos os itens fiquem em uma linha só.</li>
+                        <li>wrap - os itens quebram de linha de cima para baixo.</li>
+                        <li>wrap-reverse - os itens quebram de linha de baixo para cima.</li>
+                    </ul>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" alt="imagem explicando o flex-wrap.">
+                </article>
+                <article class="tamanho">
+                    <h2>Declaração com varios valores para layout - (flex-flow)</h2>
+                    <p>Temos a opção de usar a propriedade "flex-flow" para definir tanto a quebra de linha quanto a direção do eixo.</p>
+                </article>
+                <article class="tamanho">
+                    <h2>Alinhamento dos itens no eixo principal - ( justify-content)</h2>
+                    <p>Os itens são alinhados de acordo com a configuração do flex-container, para distribuir o espaço livre entre os itens.</p>
+                    <ul>
+                        <li>flex-start - é o padrão e alinha os itens junto a borda de inicio do flex-container.</li>
+                        <li>flex-end - os itens são alinhados junto a borda final do flex-container.</li>
+                        <li>center - os itens são centralizados no flex-container.</li>
+                        <li>space-between - os itens são distribuidos de forma igual ao logo da linha e o primeiro e o último item ficam colados as respectivas bordas.</li>
+                        <li>space-around - os itens são distribuidos com o mesmo espaço entre eles de acordo com o tamanho dos itens.</li>
+                        <li>space-evenly - os itens são distribuidos de forma igual ao logo da linha.</li>
+                    </ul>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" alt="imagem explicando o justify-content">
+                </article>
+                <article class="tamanho">
+                    <h2>Alinhamento de itens no eixo secundario - (align-items)</h2>
+                    <p>É bem parecido com o justify-content porém altera o layout dos itens de acordo com o eixo secundario.</p>
+                    <ul>
+                        <li>flex-start - os itens são colocados no inicio do eixo secundario.</li>
+                        <li>flex-end - os itens são colocados no final do eixo secundario.</li>
+                        <li>center - centraliza os itens no meio do eixo secundario.</li>
+                        <li>stretch - é o padrão estica os itens para preencher o espaço do flex-container.</li>
+                        <li>baseline - os itens são alinhados conforme  as linhas de texto dos itens.</li>
+                    </ul>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" alt="imagem explicando o align-items">
+                </article>
+                <article class="tamanho">
+                    <h2>Organizar linhas - (align-content)</h2>
+                    <p>Organiza as linhas do flex-container quando há espaço extra no eixo secundario.</p>
+                    <ul>
+                        <li>flex-start - os itens são alinhados no inicio início do container, levando em consideração o flex-direction.</li>
+                        <li>flex-end - os itens são alinhados no final do container, levando em consideração o flex-direction.</li>
+                        <li>center - centraliza os itens no flex-container.</li>
+                        <li>space-between - as linhas são destribuidas de forma igual no flex-container, a primeira e a segunda linha juntas a borda do flex-container.</li>
+                        <li>space-around - as linhas ficam com o mesmo espaçamento.</li>
+                        <li>space-evenly - os itens são distribuidos igualmente com o mesmo espaçamento entre eles.</li>
+                        <li>stretch - é o padrão, os itens de cada linha se esticam para ocupar o espaço entre as linhas.</li>
+                    </ul>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg" alt="imagem do align-content">
+                </article>
+                <article class="tamanho">
+                    <h2>Propriedades gap -(gap, row-gap, column-gap)</h2>
+                    <p>Essas propriedades nos permitem definir especificamente a distancia entre os itens, porém apenas entre os itens.</p>
+                    <p>gap: 10px;</p>
+                    <p>gap: 10px 20px;</p>
+                    <p>row-gap: 10px;</p>
+                    <p>column-gap: 20px;</p>
+                </article>
+            </section>
+            
+            <section class="Divisao">
+                <div class="tamanho">
+                    <h1>Propriedades para elementos filhos</h1>
+                </div>
+                <article class="tamanho">
+                    <h2>Determina a ordem - (Order)</h2>
+                    <p>Por padrão os itens são colocados pela ordem do código, mas essa propriedade controla a ordem que os elementos apareçem.</p>
+                    <p>order: < número >;</p>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg" alt="imagem mostra como funciona o Order">
+                </article>
+                <article class="tamanho">
+                    <h2>Habilita crescimento - (flex-grow)</h2>
+                    <p>Ele permite que o item consiga crescer se nescessário. o indice em todos os itens definem o quanto eles ocuparão do container.</p>
+                    <p>flex-grow: < numero >;</p>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg" alt="imagem sobre o flex-grow">
+                </article>
+                <article class="tamanho">
+                    <h2>Habilidade de encolher - (flex-shrink)</h2>
+                    <p>Ele permite que o item consiga encolher se nescessário.</p>
+                    <p>flex-shrink: < número >;</p>
+                    <h3> - Flex-basis</h3>
+                    <p>Define um tamanho padrão para um elemento antes do espaço do container ser distribuído, usa-se medidas de comprimentos ou palavra chave.</p>
+                    <p> flex-basis: flex-basis: cumprimento ou chave;</p>
+                </article>
+                <article class="tamanho">
+                    <h2>Declaração com varios valores para Habilidades de itens - (flex)</h2>
+                    <p>Essa propriedade é recomendada para não ter que definir uma das propriedades separadamente.</p>
+                    <p>flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];</p>
+                </article>
+                <article class="tamanho">
+                    <h2>align-itens para um único item - (align-self)</h2>
+                    <p>Permite definir um alinhamento especifico para um determinado item.</p>
+                    <p>align-self: auto | flex-start | flex-end | center | baseline | stretch;</p>
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg" alt="imagem para explicar o align-self">
+                </article>
+            </section>
+            
+        </main>
+    </body>
+</html>
